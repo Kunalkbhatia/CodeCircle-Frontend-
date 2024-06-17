@@ -1,63 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
 @font-face {
-  font-family: 'Gilroy-Bold';
-  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url(./fonts/Gilroy-Bold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Medium';
-  src: local('Gilroy-Medium'), url(./fonts/Gilroy-Medium.ttf) format('truetype');
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"), url(./fonts/Gilroy-Medium.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
-  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"), url(./fonts/Gilroy-Light.ttf) format("truetype");
 }
 
 .header_label {
   text-align: left;
   font-size: 0.75rem;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-style: normal;
-  color: #A29C9C;
+  color: #a29c9c;
   opacity: 1;
 }
 .subHeader_label {
   text-align: left;
   font-size: 0.75rem;
-  font-family: 'Gilroy-Medium', sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-style: normal;
-  color: #A29C9C;
+  color: #a29c9c;
   opacity: 1;
 }
 .text_label {
   text-align: left;
   font-size: 0.75rem;
-  font-family: 'Gilroy-Light', sans-serif;
+  font-family: "Gilroy-Light", sans-serif;
   font-style: normal;
-  color: #A29C9C;
+  color: #a29c9c;
   opacity: 1;
 }
 
-
 .container-intro > h1 {
-  animation: riseUp 1s ease forwards;
+  animation: riseUp 2s ease forwards;
+}
+
+.container-img > img {
+  animation: riseUp 2s ease forwards;
 }
 
 @keyframes riseUp {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Adjust as needed */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
@@ -65,11 +67,7 @@ html{
   }
 }
 
-
-.container_img{
-  position: relative;
-  overflow: hidden;
-}
+/*
 
 .container_img > img {
   position: absolute;
@@ -98,6 +96,4 @@ html{
   100% {
     transform: translate(40%, -50%) rotate(360deg) scale(1);
   }
-}
-
-
+} */
